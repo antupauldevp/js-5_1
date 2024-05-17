@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1120px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+#header{
+    height: 100px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    display: flex;
+    align-items: center;
+}
+#header span{
+   cursor: pointer;
+    border-radius: 50%;
+    background-color: #16a085;
+    padding: 18px;
+    color: white;
+    font-size: 15px;
+}
+#sideBar{
+    width: 0;
+    background-color: #00030363;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+#sideBar.active{
+    /* opacity: 0; */
+    width: 100%;
+}
+#sideBar .menu{
+    width: 80%;
+    /* transform: translatex(-100px); */
+    max-width: 350px;
+    background-color: #badc58   ;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#sideBar .menu ul li{
+    padding: 20px;
+}
+#sideBar .menu ul li a{
+    transform: translatex(-50px);
+    padding: 30px;
+    display: flex;
+    font-size: 20px;
+    border: 1px solid;
+    color: black;
+    padding: 14px;
+    text-transform: capitalize;
+   border-radius: 20px;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  transition: 0.4s;
+}
+#sideBar .menu ul li a:hover{
+    background-color: #f6e58d;
+    color: black;
+    padding: 22px;
+    font-weight: 600;
+    transform: translate(3px);
+
+
+    
+}
+#sideBar .cross{
+    background-color: #6ab04c;
+    position: absolute;
+    padding: 12px;
+    border-radius: 30%;
+    top: 30px;
+    right: 30px;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#watch{
+ height: 200px;
+
+ align-items: center;
+ display: flex;
+ 
+}
+#watch .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+#watch .box{
+    width: 100px;
+    height: 100px;
+    background-color: #786fa6;
+    margin: 0 20px;
+  line-height: 100px;
+  font-size: 40px;
+ font-family: sans-serif;
+ border-radius: 40px;
+ color: #f7f1e3;
+ 
+}
+#watch .row span{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+#qrCode{
+    margin-top: 50px;
+    height: 400px;
+    
+}
+#qrCode .container{
+    width: 300px;
+    height: 370px;
+    /* background-color: #16a085; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transform: translatey(18px);
+    padding-top: 10px;
+}
+#qrCode h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 27px;
+    font-weight: 500;
+}
+#qrCode input{
+    /* top: 0; */
+    display: flex;
+    width: 72%;
+    height: 60px;
+    /* margin-left: 10px; */
+    /* border-radius: 10px 100px / 120px; */
+    padding: 10px 0px;
+    border: none;
+    
+}
+#qrCode button{
+    align-items: center;
+   /* margin-left: 135px; */
+   /* margin-top: 5px; */
+   padding: 10px 25px;
+   
+   border: none;
+
+}
+#qrCode #img{
+   margin-left: 72px;
+   margin-top: 29px;
+}
